@@ -10,6 +10,8 @@
 #include <queue>
 using namespace std;
 
+
+
 struct TreeNode
 {
     int val;
@@ -18,7 +20,9 @@ struct TreeNode
     TreeNode() : val(0), left(nullptr), right(nullptr) {}
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+
 };
+
 
 class Solution
 {
@@ -38,6 +42,7 @@ public:
         while (!q.empty())
         {
             TreeNode *temp = q.front();
+            // q.pop();
             q.pop();
             if (temp == NULL)
             {
